@@ -1,6 +1,10 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
 @font-face {
+  font-family: "Slim";
+  src: url("../fonts/slim_slim/Slim_Slim.woff2") format("woff2"), url("../fonts/slim_slim/Slim_Slim.otf") format("otf");
+}
+@font-face {
   font-family: "VIA-Verlag";
   src: url("../fonts/VIA-Verlag.woff2") format("woff2"), url("../fonts/VIA-Verlag.otf") format("otf");
 }
@@ -59,6 +63,129 @@
 @font-face {
   font-family: "FoundSanExBold";
   src: url("../fonts/Foundry/FOUSANEB.woff2") format("woff2"), url("../fonts/Foundry/FOUSANEB.otf") format("otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: FoundSanExpNorm;
+}
+
+h1, h2, h3 {
+  font-family: FoundSanExpNorm;
+}
+
+h1 {
+  background-color: rgb(225, 229, 169);
+  text-align: center;
+  height: 200px;
+  line-height: 200px;
+  font-family: Slim;
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+#intro {
+  display: flex;
+  flex-flow: row nowrap;
+}
+#intro img {
+  width: 50%;
+  display: inline;
+}
+#intro #einleitung {
+  display: inline-block;
+  padding: 50px;
+}
+
+#diskurs {
+  padding: 30px;
+}
+#diskurs * {
+  background-color: rgb(191, 233, 212);
+  padding: 20px;
+}
+#diskurs h3 {
+  margin-top: 20px;
+}
+#diskurs pre {
+  font-size: 2rem;
+}
+#diskurs p {
+  font-size: 18px;
+}
+
+#calculation {
+  padding: 30px;
+  border: solid 1px;
+  height: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 50px;
+}
+#calculation form {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 20%;
+}
+#calculation form input, #calculation form select {
+  padding: 10px;
+}
+#calculation #outputBMIwert {
+  background-color: rgba(193, 212, 212, 0.741);
+  width: 25%;
+  padding: 20px;
+}
+#calculation #outputBMIwert p {
+  text-align: center;
+  padding: 20px;
+}
+#calculation #outputBMIwert #BMIwert {
+  font-size: 3rem;
+  text-align: center;
+}
+
+button {
+  margin: 30px;
+  padding: 0 10px 0 10px;
+  height: auto;
+  line-height: 40px;
+  border-radius: 20px;
+  background-color: rgb(119, 201, 206);
+  color: white;
+}
+
+button:focus, button:hover {
+  box-shadow: 5px 5px 10px black;
+}
+
+#auswertung {
+  display: none;
+}
+
+#comments {
+  padding: 30px;
+}
+#comments * {
+  background-color: rgb(191, 233, 212);
+  padding: 20px;
+}
+#comments h3 {
+  margin-top: 20px;
+}
+#comments pre {
+  font-size: 2rem;
+}
+#comments p {
+  font-size: 18px;
+}
+
+footer {
+  background-color: rgb(225, 229, 169);
+  height: 200px;
 }
 
 /*# sourceMappingURL=index.css.map */
