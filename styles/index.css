@@ -98,7 +98,13 @@ h1 {
 }
 #intro #einleitung {
   display: inline-block;
-  padding: 50px;
+  padding: 60px;
+}
+#intro #einleitung h2 {
+  margin-bottom: 20px;
+}
+#intro #einleitung p {
+  font-size: 18px;
 }
 
 #diskurs {
@@ -168,18 +174,27 @@ button:focus, button:hover {
 
 #comments {
   padding: 30px;
+  background-color: white;
 }
-#comments * {
+#comments article {
   background-color: rgb(191, 233, 212);
   padding: 20px;
+  margin: 20px;
 }
-#comments h3 {
+#comments article h3 {
   margin-top: 20px;
 }
-#comments pre {
-  font-size: 2rem;
+#comments article p {
+  font-size: 18px;
 }
-#comments p {
+
+#kinder {
+  display: flex;
+  flex-basis: auto;
+  flex-flow: row nowrap;
+  gap: 20px;
+}
+#kinder p {
   font-size: 18px;
 }
 

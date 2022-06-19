@@ -32,3 +32,13 @@ button.addEventListener('click', berechnung)
 async function evaluation() {
     
 }
+
+/* function toggleSex() {
+    {
+        on: 'männlich',
+        off: 'weiblich'
+      });
+}
+const sexToggle = document.querySelector('#toggle-one')
+sexToggle.classList.add('.bootstrapToggle')
+sexToggle.addEventListener('click', toggleSex()) */
