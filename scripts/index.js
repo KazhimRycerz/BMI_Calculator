@@ -39,6 +39,6 @@ async function evaluation() {
         off: 'weiblich'
       });
 }
-const sexToggle = document.querySelector('#toggle-one')
+const sexToggle = document.querySelector('#toggle_sex')
 sexToggle.classList.add('.bootstrapToggle')
 sexToggle.addEventListener('click', toggleSex()) */
