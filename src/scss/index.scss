@@ -1,0 +1,135 @@
+@import "./typography/typography.scss";
+@import "./reset/reset.scss";
+
+body {
+    font-family: FoundSanExpNorm;
+}
+
+h1, h2, h3 {
+    font-family: FoundSanExpNorm;
+}
+
+h1 {
+    background-color: rgb(225, 229, 169);
+    text-align: center;
+    //border: solid;
+    height: 200px;
+    line-height: 200px;
+    font-family: Slim;
+    font-weight:800;
+    font-size: 3rem;    
+}
+
+#intro {
+    display: flex;
+    flex-flow: row nowrap;
+    img {
+    width: 50%;
+    display: inline;
+    }
+    #einleitung {
+        display: inline-block;
+        padding: 60px;  
+        h2 {
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+#diskurs {
+    padding: 30px;
+    * {
+        background-color: rgb(191, 233, 212);
+        padding: 20px;
+    }
+    h3 {
+        margin-top: 20px;
+    }
+    pre {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 18px;
+    }
+}
+
+#calculation {
+    padding: 30px;
+    border: solid 1px;
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 50px;
+    form{
+        display: flex;
+        flex-flow: column nowrap;
+        width: 20%;
+        input, select {
+            padding: 10px;
+        }
+    }
+    #outputBMIwert {
+        background-color: rgba(193, 212, 212, 0.741);
+        width: 25%;
+        padding: 20px;
+        p{
+            text-align: center;
+            padding: 20px;
+        }
+        #BMIwert {
+            font-size: 3rem;
+            text-align: center;            
+        }
+    }
+}
+
+button {
+    margin: 30px;
+    padding:0 10px 0 10px;
+    height: auto;
+    line-height: 40px;
+    border-radius: 20px;
+    background-color: rgb(119, 201, 206);
+    color: white;
+}
+button:focus, button:hover {
+    box-shadow: 5px 5px 10px black ;
+}
+
+#auswertung {
+    display: none;
+}
+
+
+#comments {
+    padding: 30px;
+    background-color: white;
+    article {
+        background-color: rgb(191, 233, 212);
+        padding: 20px;
+        margin: 20px;
+        h3 {
+            margin-top: 20px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+}
+#kinder {
+    display: flex;
+    flex-basis: auto;
+    flex-flow: row nowrap;
+    gap: 20px;
+    p {
+        font-size: 18px;
+    }
+}
+
+footer {
+    background-color: rgb(225, 229, 169);
+    height: 200px;
+}
