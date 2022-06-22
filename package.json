@@ -2,7 +2,7 @@
   "name": "bmi_calculator",
   "version": "1.0.0",
   "description": "Calculating your Body MaSS Index",
-  "main": "src/index.html",
+  "main": "src/scripts/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "run-p sass-watch server",
@@ -10,7 +10,7 @@
     "sass-build": "sass src/scss:src/styles",
     "server": "light-server -c light-server.json",
     "open-browser": "open -a 'Google Chrome' http://127.0.0.1:8080",
-    "clean": "rm -rf dist src/styles",
+    "clean": "rm -rf dist",
     "copy": " mkdir dist && cp -r src/* dist",
     "build": "run-s clean sass-build copy",
     "publish": "gh-pages -d dist",
