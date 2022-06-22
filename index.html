@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+  
+    <title>Document</title>
+</head>
+<body>
+   <header> <h1>JRs Body Mass Index</h1></header>
+   <section id="intro">
+        <img src="https://www.fitforfun.de/files/images/201312/0/gesund-ernahren,45751_m_n.jpg" alt="">
+        <div id="einleitung">
+            <h2>Was kann ich mir leisten?</h2>
+            <p>Bin ich wirklich zu dick?
+                Oder schätze ich mein Gewicht ganz falsch ein? Der BMI (Body-Mass-Index) hilft, das Körpergewicht richtig zu deuten. Mit unserem BMI-Rechner lässt sich ganz einfach berechnen, ob Sie Normalgewicht haben, unter- oder übergewichtig sind. Sie brauchen nur Alter, aktuelles Gewicht und Größe, um unseren Rechner gleich jetzt zu nutzen.</p>
+        </div>
+   </section>
+   
+   <section id="diskurs">
+    <h3>Was ist der BMI?</h3>
+        <p>
+            Der Body-Mass-Index, kurz BMI, ist die gebräuchlichste Formel zur Gewichtsberechnung. Er ergibt sich aus dem Verhältnis des Körpergewichts in Kilogramm und der Körpergröße in Metern zum Quadrat. Je nach Höhe des errechneten Werts unterscheidet die Deutsche Gesellschaft für Ernährung (DGE) für die Auswertung fünf Kategorien: Untergewicht, Normalgewicht, Übergewicht , extremes Übergewicht ( Adipositas ) und massive Adipositas.
+        </p>    
+
+       <pre> BMI = Körpergewicht : (Körpergröße)²</pre>
+
+
+        <p>
+            Ein Beispiel: Ein 30-jähriger Mann mit einem Körpergewicht von 80 Kilogramm hat bei einer Körpergröße von 1,85 Metern einen BMI von 23,37 und ist damit normalgewichtig.
+            
+            
+            Ob Ihr Gewicht im grünen Bereich liegt, können Sie ganz einfach mit unserem BMI-Rechner testen. Dieser basiert auf der klassischen Formel, berücksichtigt aber zusätzlich das Alter.
+
+        </p>    
+ </section>
+
+ <section id="calculation">
+    <h3>Geben Sie Ihre Daten ein</h3>
+    <form action="http://www.foo.com" method="POST">
+        Alter in Jahren eingeben: <input id="alter" name ="alter" type="number" value="0" required>
+        Größe in Zentimeter eingeben: <input id="größe" name ="größe" type="number"  value="0" required>
+        Gewicht in Kilogramm eingeben: <input id="gewicht" name ="gewicht" type="number"  value="0" required>
+        
+        <label for="pet-select">Bitte nennen Sie uns Ihr Geschlecht::</label> 
+        <select name="sex" id="sex" required>
+            <option value="">--Ihr Geschlecht --</option>
+            <option value="männlich">männlich</option>
+            <option value="weiblich">weiblich</option>
+        </select>
+        <input type="checkbox" id="toggle_sex" checked data-toggle="toggle" data-on="männlich" data-off="weiblich">
+    </form>
+    
+    <div>
+        <h3>Hier generieren Sie Ihr Ergebnis</h3>
+        <button id="berechnung">
+          Berechung starten  
+        </button>         
+        <button id="auswertung">
+            Auswertung starten  
+          </button>
+    </div>
+    
+    <output id="outputBMIwert"> 
+        <p id="show">Ihr errechneter BMI ist damit</p>
+        <p id="BMIwert">0</p>
+    </output>
+
+ </section>
+
+ <section id="auswertung">Erläuterungen und Bewertungen</section>
+
+    <section id="comments">
+        <article>
+            <h3>BMI abhängig von Alter</h3>
+            <p>
+                Um eine bessere Einschätzung zum eigenen Gewicht abgeben zu können, muss neben dem Gewicht und der Körpergröße auch das Alter berücksichtigt werden. 
+                Das Alter ist relevant, da sich das Normalgewicht mit dem Älterwerden verschiebt. Etwa ab 40 Jahren verändern sich der Stoffwechsel und die Körperzusammensetzung. Die Folge: Wir nehmen ganz natürlich an Gewicht zu, das Normalgewicht verschiebt sich also und damit der empfohlene BMI. Allerdings kann das Körpergewicht mit fortschreitendem Alter auch wieder sinken, denn ältere Menschen bauen verstärkt an Muskelmasse ab, die schwerer ist als Fett. Das führt zu einem geringeren Gewicht, sodass der BMI bei älteren Normalgewichtigen fälschlicherweise auf Untergewicht hindeuten kann.
+            </p>
+        </article>
+        <article>
+            <h3>Welche Aussagekraft hat der BMI?</h3>
+            <p>
+                Der BMI ist ein Richtwert mit einigen Schwächen. Neben der fehlenden Berücksichtigung von Alter und Geschlecht stößt der BMI vor allem auf Kritik, weil er lediglich die Körpermasse als Indikator für die Gesundheit zugrunde legt und dabei nicht zwischen Fett- und Muskelmasse unterscheidet. Wer viel Sport treibt und damit auch viel schwere Muskelmasse besitzt, kann mit der Berechnung des BMI fälschlicherweise als übergewichtig angesehen werden.
+                Dennoch ist der BMI eine schnelle und einfache Methode, das eigene Körpergewicht einzuordnen. Neuen wissenschaftlichen Daten zufolge scheint neben dem BMI vor allem der Bauchumfang nützlich zu sein, um die Gesundheitsgefährdung durch Übergewicht besser einzuschätzen. Daneben gibt es weitere Methoden, um das Normalgewicht zu berechnen.
+            </p>
+        </article>
+        <article id="kinder">
+            <p><h3>Und was ist mit Kindern?</h3>Bei Erwachsenen reicht dieser BMI-Wert aus, um grob einzuschätzen, ob das Körpergewicht in einem gesunden Bereich liegt. Bei Kindern und Jugendlichen ist der Body-Mass-Index allein aber nicht aussagekräftig. Da Kinder und Jugendliche jedoch noch mitten im Wachstum stecken, kann nicht einfach die Tabelle für Erwachsende herangezogen werden, um das Körpergewicht einzuordnen. Für die Bewertung des Körpergewichts von Kindern ist es daher wichtig, neben der Masse und der Größe auch das Alter und das Geschlecht mit einfließen zu lassen. 
+            Die Körper von Mädchen und Jungen entwicklen sich in unterschiedlichen Lebensphasen und Altersabschnitten. Mit dem Eintreten der Pubertät beginnen die Kinderkörper, sich in ihrem Aufbau zu verwandeln: Die vermehrte Ausschüttung des Hormons Testostoren sorgt bei Jungen für ein stärkeres Wachstum der Muskulatur, während Östrogene bei Mädchen die Brustentwicklung einleiten lassen. Beides sind Faktoren, die bei einer Einordnung des Körpergewichts berücksichtigt werden müssen.
+            </p>
+            <figure><img src="http://www.doctors.today/_storage/asset/1651900/storage/kirchheim:article-2_04-1/file/157223770/07045464.jpg" alt=""></figure>
+        </article>
+    
+    </section>
+
+    <footer>
+<p>Dieser BMI-Rechner ist eine Projektaufgabe des DCI, Kurs dci_fbw_wd_21_d05 im Juni 2020</p>
+    </footer>
+
+    <script src="./src/scripts/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+</body>
+</html>
