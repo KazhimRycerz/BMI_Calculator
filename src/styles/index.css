@@ -169,7 +169,7 @@ button:focus, button:hover {
 }
 
 #auswertung {
-  display: none;
+  display: block;
 }
 
 #comments {
@@ -190,12 +190,11 @@ button:focus, button:hover {
 
 #kinder {
   display: flex;
-  flex-basis: auto;
   flex-flow: row nowrap;
   gap: 20px;
 }
 #kinder p {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 footer {
