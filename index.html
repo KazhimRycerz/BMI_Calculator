@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/index.css">
-    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
   
     <title>Document</title>
 </head>
+
 <body>
    <header> <h1>JRs Body Mass Index</h1></header>
+   
    <section id="intro">
         <img src="https://www.fitforfun.de/files/images/201312/0/gesund-ernahren,45751_m_n.jpg" alt="">
         <div id="einleitung">
@@ -20,58 +21,74 @@
         </div>
    </section>
    
-   <section id="diskurs">
-    <h3>Was ist der BMI?</h3>
-        <p>
-            Der Body-Mass-Index, kurz BMI, ist die gebräuchlichste Formel zur Gewichtsberechnung. Er ergibt sich aus dem Verhältnis des Körpergewichts in Kilogramm und der Körpergröße in Metern zum Quadrat. Je nach Höhe des errechneten Werts unterscheidet die Deutsche Gesellschaft für Ernährung (DGE) für die Auswertung fünf Kategorien: Untergewicht, Normalgewicht, Übergewicht , extremes Übergewicht ( Adipositas ) und massive Adipositas.
-        </p>    
+    <section id="diskurs">
+        <h3>Was ist der BMI?</h3>
+            <p>
+                Der Body-Mass-Index, kurz BMI, ist die gebräuchlichste Formel zur Gewichtsberechnung. Er ergibt sich aus dem Verhältnis des Körpergewichts in Kilogramm und der Körpergröße in Metern zum Quadrat. Je nach Höhe des errechneten Werts unterscheidet die Deutsche Gesellschaft für Ernährung (DGE) für die Auswertung fünf Kategorien: Untergewicht, Normalgewicht, Übergewicht , extremes Übergewicht ( Adipositas ) und massive Adipositas.
+            </p>    
 
-       <pre> BMI = Körpergewicht : (Körpergröße)²</pre>
+        <pre> BMI = Körpergewicht : (Körpergröße)²</pre>
 
 
-        <p>
-            Ein Beispiel: Ein 30-jähriger Mann mit einem Körpergewicht von 80 Kilogramm hat bei einer Körpergröße von 1,85 Metern einen BMI von 23,37 und ist damit normalgewichtig.
+            <p>
+                Ein Beispiel: Ein 30-jähriger Mann mit einem Körpergewicht von 80 Kilogramm hat bei einer Körpergröße von 1,85 Metern einen BMI von 23,37 und ist damit normalgewichtig.
+                
+                
+                Ob Ihr Gewicht im grünen Bereich liegt, können Sie ganz einfach mit unserem BMI-Rechner testen. Dieser basiert auf der klassischen Formel, berücksichtigt aber zusätzlich das Alter.
+
+            </p>    
+    </section>
+
+    <section id="calculation">
+        <h3>Geben Sie Ihre Daten ein</h3>
+        <form action="http://www.foo.com" method="POST">
+            Alter in Jahren eingeben: <input id="alter" name ="alter" type="number" value="60" required>
+            Größe in Zentimeter eingeben: <input id="größe" name ="größe" type="number"  value="195" required>
+            Gewicht in Kilogramm eingeben: <input id="gewicht" name ="gewicht" type="number"  value="102" required>
             
-            
-            Ob Ihr Gewicht im grünen Bereich liegt, können Sie ganz einfach mit unserem BMI-Rechner testen. Dieser basiert auf der klassischen Formel, berücksichtigt aber zusätzlich das Alter.
-
-        </p>    
- </section>
-
- <section id="calculation">
-    <h3>Geben Sie Ihre Daten ein</h3>
-    <form action="http://www.foo.com" method="POST">
-        Alter in Jahren eingeben: <input id="alter" name ="alter" type="number" value="0" required>
-        Größe in Zentimeter eingeben: <input id="größe" name ="größe" type="number"  value="0" required>
-        Gewicht in Kilogramm eingeben: <input id="gewicht" name ="gewicht" type="number"  value="0" required>
+            <label for="pet-select">Bitte nennen Sie uns Ihr Geschlecht::</label> 
+            <select name="sex" id="sex" required>
+                <option value="">--Ihr Geschlecht --</option>
+                <option value="männlich">männlich</option>
+                <option value="weiblich">weiblich</option>
+            </select>
+            <input type="checkbox" id="toggle_sex" checked data-toggle="toggle" data-on="männlich" data-off="weiblich">
+        </form>
         
-        <label for="pet-select">Bitte nennen Sie uns Ihr Geschlecht::</label> 
-        <select name="sex" id="sex" required>
-            <option value="">--Ihr Geschlecht --</option>
-            <option value="männlich">männlich</option>
-            <option value="weiblich">weiblich</option>
-        </select>
-        <input type="checkbox" id="toggle_sex" checked data-toggle="toggle" data-on="männlich" data-off="weiblich">
-    </form>
-    
-    <div>
-        <h3>Hier generieren Sie Ihr Ergebnis</h3>
-        <button id="berechnung">
-          Berechung starten  
-        </button>         
-        <button id="auswertung">
-            Auswertung starten  
-          </button>
-    </div>
-    
-    <output id="outputBMIwert"> 
-        <p id="show">Ihr errechneter BMI ist damit</p>
-        <p id="BMIwert">0</p>
-    </output>
+        <div>
+            <h3>Hier generieren Sie Ihr Ergebnis</h3>
+            <button id="berechnung">
+            Berechung starten  
+            </button>         
+            <button id="auswertung">
+                Auswertung starten  
+            </button>
+        </div>
+        
+        <output id="outputBMIwert"> 
+            <p id="zusammenfassungEingabe"></p>
+            <p id="show">Ihr errechneter BMI ist damit</p>
+            <p id="BMIwert">0</p>
+        </output>
+        
+</section>
+
+    <section id="auswertung">Erläuterungen und Bewertungen
+        <div id="evaluationdetails">
+
+        </div>
+        
+        
+        <div id="history">
+            <h3>Hier sehen Sie ihre Entwicklung</h3>
+            <div id="dataHistory">
+                <li><p>20.03.2022</p><p>BMI</p></li>
+        
+            </div>
+        <h2 id="vergleich"></h2>
+        </div>
 
  </section>
-
- <section id="auswertung">Erläuterungen und Bewertungen</section>
 
     <section id="comments">
         <article>
@@ -94,14 +111,15 @@
             </p>
             <figure><img src="http://www.doctors.today/_storage/asset/1651900/storage/kirchheim:article-2_04-1/file/157223770/07045464.jpg" alt=""></figure>
         </article>
-    
+
     </section>
 
+
     <footer>
-<p>Dieser BMI-Rechner ist eine Projektaufgabe des DCI, Kurs dci_fbw_wd_21_d05 im Juni 2020</p>
+        <p>Dieser BMI-Rechner ist eine Projektaufgabe des DCI, Kurs dci_fbw_wd_21_d05 im Juni 2020</p>
     </footer>
 
     <script src="./scripts/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+    
 </body>
 </html>

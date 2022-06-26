@@ -100,7 +100,7 @@ button:focus, button:hover {
 }
 
 #auswertung {
-    display: none;
+    display: block;
 }
 
 
@@ -121,11 +121,10 @@ button:focus, button:hover {
 }
 #kinder {
     display: flex;
-    flex-basis: auto;
     flex-flow: row nowrap;
     gap: 20px;
     p {
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 
